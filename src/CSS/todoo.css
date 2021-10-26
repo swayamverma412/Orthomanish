@@ -30,7 +30,9 @@ button {
   flex-direction: column;
   justify-content: center;
   background: #f6f6f6;
-  margin: 50px;
+  margin-top: 300px;
+  padding-bottom: 130px;
+  margin-bottom: 200px;
 }
 
 .form >   h1{

@@ -90,14 +90,13 @@ const Form = () => {
     const classes = useStyles();
     return (
       <div className="form" >
-      <form className="form" onSubmit={handleSubmit}>
+      <form  onSubmit={handleSubmit}>
       <React.Fragment>
         <main className={classes.layout}>
           <Paper  style={{borderStyle:"solid",borderColor:"#6372ff", borderWidth:"13px"}} className={classes.paper}>
       <React.Fragment>
         <h1 style={{fontSize:"15px"}}>Have a Question? Chat with professional</h1>
         <h3 style={{fontSize:'40px', textAlign:"left", color:"black", marginTop:'2px'}}>Don't put up with pain!<br></br><span style={{color:"#5ca9fb", fontSize:'35px'}}> MAKE AN APPOINTMENT.</span> </h3>
-
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6}>
           <input  style={{ marginTop:'20px',  width: '250px' , height:'40px' , borderRadius: '5px', paddingLeft:'5px', border:'none'}}
@@ -136,15 +135,14 @@ const Form = () => {
           <DatePickers/>
           </Grid>
           <Grid item xs={12} sm={12}>
-          <textarea style={{ width:'230px' , alignContent:'center', marginTop:'20px',textAlign:'center',borderRadius:'5px' }}
+          <textarea style={{  alignContent:'center',width:'250px', marginTop:'20px',textAlign:'center',borderRadius:'5px' }}
             placeholder="Problem Description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           ></textarea>
           </Grid>
           <Grid>
-          <button
-            type="submit" style={{margin:"0", alignItems:"center"}}> Submit
+          <button type="submit" style={{margin:"0", alignItems:"center"}}> Submit
           </button>
           </Grid>
         </Grid>
