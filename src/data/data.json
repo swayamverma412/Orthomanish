@@ -1,12 +1,10 @@
 {
     "Header": {
-
         "title": "We are a Landing Page",
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
-
     },
-    
-    "Services": [{
+    "Services": [
+        {
             "icon": "fa fa-heart",
             "name": "ORIF Surgery",
             "text": "Performed over 140 ORIF Plating and Nailing of upper and lower limb"
@@ -20,10 +18,10 @@
             "icon": "fa fa-heart",
             "name": "Arthroscopy",
             "text": "Performed over 40 Diagosnitic Arthroscopy and 8 Arthroscopic Acl repair."
-        }        
-
+        }
     ],
-    "Testimonials": [{
+    "Testimonials": [
+        {
             "img": "img/testimonials/01.jpg",
             "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
             "name": "John Doe"
@@ -54,13 +52,13 @@
             "name": "Johnathan Doe"
         }
     ],
-    
     "Contact": {
         "facebook": "fb.com",
         "twitter": "twitter.com",
         "youtube": "youtube.com"
     },
-    "Features": [{
+    "Features": [
+        {
             "img1": "img/features/140.jpg",
             "title": "ORIFB Surgery",
             "text": "Performed over 140 ORIF Plating and Nailing of upper and lower limb."
@@ -73,7 +71,8 @@
         {
             "img1": "img/features/80.jpg",
             "title": "Surgeries",
-            "text": "Assisted over 80 sports injuries , Ligament reconstruction ,Complex Trauma Pelvis , Acetabulum , and 30 Spine Surgeries"        },
+            "text": "Assisted over 80 sports injuries , Ligament reconstruction ,Complex Trauma Pelvis , Acetabulum , and 30 Spine Surgeries"
+        },
         {
             "img1": "img/features/40.jpg",
             "title": "Arthroscopy",
