@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Form from './components/form';
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -14,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
     marginLeft:'60px',
     marginTop:'60px',
-    marginBottom:'60px',
-    background:'#6372ff'
+    marginBottom:'200px',
+    background:'#6372ff',
   },
 }));
 
@@ -24,11 +25,11 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
-      <Grid item xs={8}>
+      <Grid container spacing={3}>
       <Paper className={classes.paper}><Form/>
       </Paper>
-      </Grid>
-       <Grid item xs={4}> 
+      </Grid> 
+      <Grid item xs={12} sm={6}>
       </Grid>
     </div>
   );

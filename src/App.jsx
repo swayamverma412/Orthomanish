@@ -7,10 +7,13 @@ import { Testimonials } from './components/testimonials'
 import { Contact } from './components/contact'
 import JsonData from './data/data.json'
 import SmoothScroll from 'smooth-scroll'
-import Grid1 from './grid'
+import CenteredGrid from './grid'
+import './CSS/todoo.css'
+import Form from './components/form';
 import Advantages from './components/advantages'
 import Welcomingsection from './components/DescPage'
 import Features1 from './components/Featuresnew'
+import { Grid } from '@material-ui/core'
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -33,7 +36,7 @@ const App = () => {
       <Advantages/>
       <Services data={landingPageData.Services}/>
       <Testimonials data={landingPageData.Testimonials} />
-      <Grid1/>
+      <Form/>
       <Contact data={landingPageData.Contact} />
     </div>
   )

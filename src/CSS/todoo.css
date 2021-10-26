@@ -30,6 +30,7 @@ button {
   flex-direction: column;
   justify-content: center;
   background: #f6f6f6;
+  margin: 50px;
 }
 
 .form >   h1{
@@ -59,6 +60,8 @@ textarea {
   background-color: white;
   color: grey(10, 10, 10, 0.11);
   font-family: Arial, Helvetica, sans-serif;
+  align-content: center;
+  text-align: center;
   
 
 } 
