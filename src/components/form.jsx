@@ -128,6 +128,7 @@ const Form = () => {
                         border: "inset",
                         borderColor: "#6372ff",
                       }}
+                      required
                       placeholder="First name"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
@@ -144,6 +145,7 @@ const Form = () => {
                         border: "inset",
                         borderColor: "#6372ff",
                       }}
+                      required
                       placeholder="Last name"
                       value={lastname}
                       onChange={(e) => setLastName(e.target.value)}
@@ -161,6 +163,7 @@ const Form = () => {
                         border: "inset",
                         borderColor: "#6372ff",
                       }}
+                      required
                       onChange={(e) => setGender(e.target.value)}
                       defaultValue="Gender"
                     >
@@ -183,6 +186,7 @@ const Form = () => {
                         border: "inset",
                         borderColor: "#6372ff",
                       }}
+                      required
                       placeholder="Age"
                       value={age}
                       onChange={(e) => setAge(e.target.value)}
@@ -199,6 +203,7 @@ const Form = () => {
                         border: "inset",
                         borderColor: "#6372ff",
                       }}
+                      required
                       placeholder="Your Phone"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
@@ -215,6 +220,7 @@ const Form = () => {
                         border: "inset",
                         borderColor: "#6372ff",
                       }}
+                      required
                     />
                   </Grid>
                   <Grid item xs={12} sm={12}>
@@ -229,6 +235,7 @@ const Form = () => {
                         border: "inset",
                         borderColor: "#6372ff",
                       }}
+                      required
                       placeholder="Problem Description"
                       value={description}
                       onChange={(e) => setDescription(e.target.value)}
