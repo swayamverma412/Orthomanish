@@ -13,7 +13,7 @@ export const About = (props) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div id="about" className={classes.root}>
       <Grid
         container
         direction="row"
@@ -42,33 +42,9 @@ export const About = (props) => {
           style={{ minWidth: "50%", maxWidth: "100%" }}
         >
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-            <div
-              style={{
-                position: "inherit",
-                content: "",
-                background:
-                  "linear-gradient(to right, #5ca9fb 0%, #6372ff 100%)",
-                height: "4px",
-                width: "60px",
-                bottom: "-87.5px",
-                left: "0",
-              }}
-            ></div>
             <div className="about-text">
               <h2 style={{ marginTop: "40px" }}>
                 About Us
-                <span
-                  style={{
-                    position: "inherit",
-                    content: "",
-                    background:
-                      "linear-gradient(to right, #5ca9fb 0%, #6372ff 100%)",
-                    height: "0px",
-                    width: "60px",
-                    bottom: "-100px",
-                    left: "0",
-                  }}
-                ></span>
               </h2>
               <p style={{ textAlign: "left" }}>
                 Dr.Manish kumar Sharma is currently working as Senior resident in Dept. of Orthopaedics at Samaleswari Hospital, Sundargadh. Completed his MBBS from Vydehi Medical College, Bangalore(Karnataka) and went for his PG training in Orthopedics from Hi-Tech Medical College, Bhubaneshwar (Odisha) in 2017. He has over 3 year exprience as senior residentin the Dept. of ORTHOPEDICS. A Compassionate doctor who always considers my patients’ needs and comfort levels during diagnosis and treatment, and works to ensure they have the best possible experience.
