@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../CSS/todoo.css";
 import { db } from "../firebase";
 import DatePickers from "../date";
+import TextField from '@material-ui/core/TextField';
 import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
@@ -11,7 +12,6 @@ const Form = () => {
   const [lastname, setLastName] = useState("");
   const [phone, setPhone] = useState("");
   const [date, setdate] = useState("");
-  const [interested, setInterested] = useState("");
   const [gender, setGender] = useState("");
   const [age, setAge] = useState("");
   const [description, setDescription] = useState("");
@@ -27,7 +27,6 @@ const Form = () => {
         Lastname: lastname,
         Phone: phone,
         Date: date,
-        Interested: interested,
         Gender: gender,
         Age: age,
         Description: description,
@@ -45,7 +44,6 @@ const Form = () => {
     setLastName("");
     setPhone("");
     setdate("");
-    setInterested("");
     setGender("");
     setDescription("");
     setAge("");
@@ -77,6 +75,11 @@ const Form = () => {
     },
     stepper: {
       padding: theme.spacing(3, 0, 5),
+    },
+    textField: {
+      marginLeft: theme.spacing(1),
+      marginRight: theme.spacing(1),
+      width: 400,
     },
   }));
 
@@ -210,18 +213,26 @@ const Form = () => {
                     />
                   </Grid>
                   <Grid item xs={12} sm={6}>
-                    <DatePickers
-                      style={{
-                        marginTop: "20px",
-                        width: "250px",
-                        height: "40px",
-                        borderRadius: "5px",
-                        paddingLeft: "5px",
-                        border: "inset",
-                        borderColor: "#6372ff",
-                      }}
-                      required
-                    />
+                    <TextField
+                        style={{
+                              marginTop: "20px",
+                              width: "250px",
+                              height: "40px",
+                              borderRadius: "5px",
+                              paddingLeft: "5px",
+                              border: "inset",
+                              borderColor: "#6372ff",
+                              }}
+                            required
+                            value={date}
+                            onChange={(e) => setdate(e.target.value)}
+                            id="date"
+                            type="date"
+                            defaultValue="2021-07-15"
+                            className={classes.textField}
+                            InputLabelProps={{
+                              shrink: true,
+                            }}/>
                   </Grid>
                   <Grid item xs={12} sm={12}>
                     <textarea
@@ -247,9 +258,10 @@ const Form = () => {
                 alignItems="center">
                     <div>
                     </div>
-                    <div style={{
+                    <div style=
+                    {{
                         alignContent: "center",
-                      }}>
+                    }}>
                     <button
                       type="submit"
                       className='btn btn-custom btn-lg'
