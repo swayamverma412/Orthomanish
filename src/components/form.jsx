@@ -222,13 +222,14 @@ const Form = () => {
                               paddingLeft: "5px",
                               border: "inset",
                               borderColor: "#6372ff",
+                              marginLeft: "0px"
                               }}
                             required
                             value={date}
                             onChange={(e) => setdate(e.target.value)}
                             id="date"
                             type="date"
-                            defaultValue="2021-07-15"
+                            defaultValue="dd-mm-yyyy"
                             className={classes.textField}
                             InputLabelProps={{
                               shrink: true,
